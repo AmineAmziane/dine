@@ -1,0 +1,40 @@
+.footer{
+	width: 100%;
+	min-height: 250px;
+	padding: 6em;
+	background:#000;
+	color: #fff;
+	font-family: 'Spartan', sans-serif;
+	@media (max-width: 250px){
+	  	padding:6em 1em;
+	}
+	.inner-footer{
+	  width: 90%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+	  -ms-flex-pack: distribute;
+	      justify-content: space-around;
+	  -ms-flex-wrap: wrap;
+	      flex-wrap: wrap;
+	  @media (max-width: 1080px){
+	  	-webkit-box-orient: vertical;
+	  	-webkit-box-direction: normal;
+	  	    -ms-flex-direction: column;
+	  	        flex-direction: column;
+	  	-webkit-box-pack: center;
+	  	    -ms-flex-pack: center;
+	  	        justify-content: center;
+	  	text-align: center;
+	  }
+	  div{
+	  	@media (max-width: 1080px){
+	  	  margin: 1em 0;
+	    }
+	  }
+	  p{
+	  	letter-spacing: 1px;
+	  	margin: .75em 0;
+	  }	
+	}
+}

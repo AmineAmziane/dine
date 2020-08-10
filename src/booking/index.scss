@@ -1,0 +1,176 @@
+.bookingheader{
+	background:#000 url("./../images/booking/hero-bg-desktop@2x.jpg") center no-repeat;
+	background-size:cover;
+	width: 100%;
+	min-height: 600px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	font-family: 'Spartan', sans-serif;
+	padding: 0 4em;
+	position:relative;
+	@media (max-width: 1088px){
+       -webkit-box-orient: vertical;
+       -webkit-box-direction: normal;
+           -ms-flex-direction: column;
+               flex-direction: column;
+       padding:4em;
+	}
+	@media (max-width: 500px){
+       -webkit-box-orient: vertical;
+       -webkit-box-direction: normal;
+           -ms-flex-direction: column;
+               flex-direction: column;
+       padding:4em 0;
+	}
+	&>div{
+		width: 40%;
+		@media (max-width: 1088px){
+	       margin: 0em 0 0 0;
+	       width: 95%;
+	       text-align: center;
+		}
+	}
+	.i-bk{
+		img{
+			margin: 0 0 12em 0;
+			@media (max-width: 1088px){
+		       margin: 0 0 6em 0;
+			}
+		}
+		h1{
+			font-size: 4.5rem;
+            font-weight: 300;
+            margin:-.1em 0 .35em 0;
+            @media (max-width: 1088px){
+		       font-size: 4rem;
+			}
+		}
+		p{
+			width: 88%;
+			font-size:1.25rem;
+			line-height: 2rem; 
+			@media (max-width: 1088px){
+		       width: 100%;
+			}
+		}
+	}
+	.reserve{
+		width: 500px;
+		padding:2em;
+		background:#fff;
+		color: #000;
+		-webkit-transform: translateY(8em);
+		    -ms-transform: translateY(8em);
+		        transform: translateY(8em);
+		-webkit-box-shadow: 0px 10px 32px -14px rgba(0,0,0,0.5);
+		        box-shadow: 0px 10px 32px -14px rgba(0,0,0,0.5);
+		.hide{
+			display: none;
+		}
+		.show{
+			display: block;
+			color: #f88;
+			margin: .25em 0;
+		}
+		@media (max-width: 520px){
+			width: 100%;
+		}
+		&>*{
+			margin: .25em 0;
+		}
+		&>input{
+			width: 100%;
+			padding:1em .5em;
+			font-size: 1.25rem;
+			font-family: 'Spartan', sans-serif;
+            border-bottom: 1px solid black;
+		}
+		input,select{
+			opacity: 0.5;
+			&:focus{
+				opacity: 1;
+			}
+		}
+		div{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            -webkit-box-align:center;
+                -ms-flex-align:center;
+                    align-items:center;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            p{
+            	font-size:1.3rem;
+            	@media (max-width: 480px){
+                    margin:.5em 0;
+            	}
+            }
+            input,select{
+            	padding:1.5em .5rem;
+            	font-weight: 2rem;
+            	width: 90px;
+            	margin: 0 0 0 1em;
+            	font-family: 'Spartan', sans-serif;
+                border-bottom: 1px solid black;
+
+            }
+            select {
+            	option {
+	            	font-size: 2.25rem;
+                }
+            }
+		}
+		.pp{
+            padding:2em;
+            border-bottom:1px solid #000;
+            h2{
+            	color: #000;
+            	cursor: pointer;
+            	-webkit-transition: 0.4s;
+            	-o-transition: 0.4s;
+            	transition: 0.4s;
+            	padding:.25em;
+            	font-size: 2rem;
+            	&:hover{
+            		-webkit-transform: scale(1.5);
+            		    -ms-transform: scale(1.5);
+            		        transform: scale(1.5);
+            	}
+            }
+        }
+        .rsv{
+        	font-family: 'Spartan', sans-serif;
+        	width: 100%;
+        	font-size:1.15rem;
+        	padding:1.25em 0; 
+        	background:#000;
+        	color: #fff;
+        	margin: 1.5em 0;
+        	border:1px solid transparent;
+        	cursor: pointer;
+        	-webkit-transition: 0.4s;
+        	-o-transition: 0.4s;
+        	transition: 0.4s;
+        	&:hover{
+        		background:#fff;
+        		color: #000;
+        		border:1px solid #000;
+        	}
+        }
+	}
+}
+.bg-book{
+	width: 100%;
+	height: 300px;
+	background:url("./../images/patterns/pattern-curve-bottom-right.svg") no-repeat left;
+}
