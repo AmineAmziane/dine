@@ -6,7 +6,7 @@ import "./App.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/react">
       <Switch>
         <Route exact path="/" component={Index} />
         <Route exact path="/booking" component={Booking} />
